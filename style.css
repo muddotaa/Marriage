@@ -15,9 +15,13 @@
 html {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
+  width: 100%;
+  max-width: 100%;
   margin: 0;
   color: var(--ink);
   background: var(--paper);
@@ -704,13 +708,15 @@ footer {
 
 @media (max-width: 680px) {
   .couple-hero {
-    width: min(720px, 108vw);
-    margin-left: -4vw;
+    width: min(560px, 100%);
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .outfits {
-    width: 112%;
-    margin-left: -6%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -723,4 +729,14 @@ footer {
 
 .outfits svg {
   display: none;
+}
+
+@media (max-width: 680px) {
+  .couple-image {
+    width: min(520px, 94vw);
+  }
+
+  .outfits-image {
+    width: min(980px, 96vw);
+  }
 }

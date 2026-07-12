@@ -2,7 +2,7 @@
 
 Весільний сайт-запрошення для пари. Зроблений як легка статична сторінка: без збірки, без серверу, без платних сервісів.
 
-Майбутня GitHub Pages адреса:
+GitHub Pages адреса:
 
 ```text
 https://muddotaa.github.io/mali-odruzhuyutsya/
@@ -36,11 +36,5 @@ assets/      PNG-ілюстрації
 4. Обери `Deploy from a branch`.
 5. Вкажи `main` і папку `/(root)`.
 6. Натисни `Save`.
-
-Після публікації сайт буде доступний за адресою:
-
-```text
-https://muddotaa.github.io/mali-odruzhuyutsya/
-```
 
 Оновлення на GitHub Pages можуть з'являтися не миттєво, іноді потрібно кілька хвилин.
