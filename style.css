@@ -199,10 +199,71 @@ h1 span::after {
 .heart-three { right: 8%; bottom: 16%; transform: rotate(12deg); }
 .heart-four { right: 8%; top: 12%; }
 .heart-five { left: 8%; top: 19%; transform: rotate(-13deg); }
+.heart-photo { right: 9%; top: 12%; transform: rotate(10deg); }
 .star-one { right: 17%; top: 8%; }
 .star-two { right: 8%; bottom: 17%; }
+.star-photo { left: 8%; bottom: 14%; transform: rotate(-8deg); }
 
 .details .content { max-width: 770px; }
+
+.photo-story .content {
+  width: min(980px, 100%);
+}
+
+.photo-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 430px) minmax(280px, 1fr);
+  gap: clamp(28px, 6vw, 68px);
+  align-items: center;
+  text-align: left;
+}
+
+.photo-frame {
+  position: relative;
+  margin: 0;
+  transform: rotate(-1.8deg);
+}
+
+.photo-frame::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -18px;
+  width: 118px;
+  height: 32px;
+  background:
+    repeating-linear-gradient(-12deg, transparent 0 7px, rgba(255,255,255,.32) 7px 10px),
+    rgba(232,183,193,.72);
+  border: 2px solid rgba(41,38,34,.25);
+  border-radius: 6px;
+  transform: translateX(-50%) rotate(2deg);
+  z-index: 2;
+}
+
+.photo-frame picture,
+.photo-frame img {
+  display: block;
+}
+
+.photo-frame img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: 50% 52%;
+  border: 9px solid rgba(255,255,255,.78);
+  border-radius: 8px;
+  outline: 3px solid rgba(41,38,34,.74);
+  box-shadow: 10px 12px 0 rgba(41,38,34,.09);
+}
+
+.photo-copy {
+  transform: rotate(.25deg);
+}
+
+.photo-copy .subtitle {
+  margin-left: 0;
+  margin-right: 0;
+}
 
 .details-card {
   margin: 42px auto 28px;
@@ -584,6 +645,22 @@ footer {
   .hero { min-height: 100svh; }
   .couple-hero { margin-top: 22px; }
   .details-card { margin-top: 28px; }
+
+  .photo-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .photo-frame {
+    width: min(330px, 88vw);
+    margin: 0 auto;
+  }
+
+  .photo-copy .subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .detail-row {
     grid-template-columns: 58px 1fr;
