@@ -591,16 +591,19 @@ h1 span::after {
 }
 
 .family-bottom {
-  width: min(440px, 88vw);
-  margin: 12px auto 12px;
+  width: min(360px, 58vw);
+  margin: 10px auto 10px;
   text-align: center;
 }
 
-.family-bottom img {
+.family-bottom-image {
   display: block;
   width: 100%;
+  max-width: 360px;
+  max-height: 32svh;
   height: auto;
   margin: 0 auto;
+  object-fit: contain;
   filter: drop-shadow(0 7px 7px rgba(62,54,46,.06));
 }
 
@@ -727,8 +730,13 @@ footer {
   .palette-card { padding: 14px; }
   .palette-chips { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .family-bottom {
-    width: min(360px, 88vw);
+    width: min(300px, 76vw);
     margin-top: 6px;
+  }
+
+  .family-bottom-image {
+    max-width: 300px;
+    max-height: 26svh;
   }
 }
 
