@@ -163,6 +163,12 @@ h1 span::after {
   margin: 0 auto;
 }
 
+.couple-hero .couple-image {
+  width: min(720px, 92vw);
+  max-height: 42svh;
+  object-fit: contain;
+}
+
 .couple-hero svg {
   display: none;
 }
@@ -863,6 +869,11 @@ footer {
 @media (max-width: 680px) {
   .couple-image {
     width: min(520px, 94vw);
+  }
+
+  .couple-hero .couple-image {
+    width: min(520px, 94vw);
+    max-height: 34svh;
   }
 
   .outfits-image {
