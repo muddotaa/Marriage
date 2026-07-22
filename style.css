@@ -590,13 +590,13 @@ h1 span::after {
   margin-top: 12px;
 }
 
-.pets-family {
-  width: min(560px, 94vw);
-  margin: 10px auto 12px;
+.family-bottom {
+  width: min(440px, 88vw);
+  margin: 12px auto 12px;
   text-align: center;
 }
 
-.pets-family img {
+.family-bottom img {
   display: block;
   width: 100%;
   height: auto;
@@ -604,7 +604,7 @@ h1 span::after {
   filter: drop-shadow(0 7px 7px rgba(62,54,46,.06));
 }
 
-.pets-family p {
+.family-bottom p {
   display: inline-block;
   margin: -4px 0 0;
   padding: 6px 12px;
@@ -726,8 +726,8 @@ footer {
   .dots a { width: 8px; height: 8px; border-width: 1.5px; }
   .palette-card { padding: 14px; }
   .palette-chips { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .pets-family {
-    width: min(420px, 92vw);
+  .family-bottom {
+    width: min(360px, 88vw);
     margin-top: 6px;
   }
 }
