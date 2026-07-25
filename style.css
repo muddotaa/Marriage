@@ -760,8 +760,11 @@ footer {
     opacity: .24;
   }
 
-  .hero-names { font-size: clamp(3rem, 14vw, 4rem); }
-  .hero-names span { display: block; }
+  .hero-names {
+    font-size: 2.85rem;
+    white-space: nowrap;
+  }
+  .hero-names span { display: inline-block; }
   .story-copy { gap: 20px; }
   .story-copy p {
     font-size: clamp(1.08rem, 5vw, 1.35rem);
@@ -801,6 +804,10 @@ footer {
     max-width: 300px;
     max-height: 26svh;
   }
+}
+
+@media (max-width: 360px) {
+  .hero-names { font-size: 2.55rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
