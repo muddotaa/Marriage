@@ -211,25 +211,51 @@ h1 span::after {
   position: absolute;
   z-index: 1;
   font-family: "Neucha", cursive;
+  opacity: .78;
   user-select: none;
   pointer-events: none;
 }
 
 .heart { color: var(--pink); font-size: clamp(3rem, 7vw, 6rem); }
 .star { color: var(--yellow); font-size: clamp(2rem, 5vw, 4.5rem); }
+.flower-mark { color: var(--green); font-size: clamp(2.8rem, 6vw, 5rem); }
+.rings {
+  width: clamp(54px, 7vw, 82px);
+  height: clamp(32px, 4vw, 48px);
+}
+.rings::before,
+.rings::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  width: 55%;
+  aspect-ratio: 1;
+  border: 3px solid var(--yellow);
+  border-radius: 50%;
+}
+.rings::before { left: 4%; transform: rotate(-10deg); }
+.rings::after { right: 4%; transform: rotate(11deg); }
 .heart-one { left: 7%; top: 10%; transform: rotate(-17deg); }
 .heart-two { right: 8%; top: 25%; transform: rotate(14deg); }
 .heart-hero-three { left: 14%; bottom: 19%; font-size: clamp(2.2rem, 4.5vw, 4rem); transform: rotate(11deg); }
 .heart-hero-four { right: 17%; bottom: 12%; font-size: clamp(2rem, 4vw, 3.6rem); transform: rotate(-15deg); }
 .heart-hero-five { left: 23%; top: 29%; font-size: clamp(1.8rem, 3.5vw, 3.2rem); transform: rotate(19deg); }
 .heart-three { right: 8%; bottom: 16%; transform: rotate(12deg); }
+.heart-details-two { left: 8%; top: 14%; font-size: clamp(2.2rem, 5vw, 4.4rem); transform: rotate(-11deg); }
 .heart-four { right: 8%; top: 12%; }
+.heart-dress-two { left: 8%; top: 18%; font-size: clamp(2rem, 4.5vw, 4rem); transform: rotate(12deg); }
 .heart-five { left: 8%; top: 19%; transform: rotate(-13deg); }
+.heart-rsvp-two { right: 8%; top: 11%; font-size: clamp(2.2rem, 5vw, 4.5rem); transform: rotate(14deg); }
 .heart-photo { right: 9%; top: 12%; transform: rotate(10deg); }
 .heart-story-two { left: 10%; bottom: 13%; font-size: clamp(2.4rem, 5vw, 4.5rem); transform: rotate(-12deg); }
 .star-one { right: 17%; top: 8%; }
 .star-two { right: 8%; bottom: 17%; }
+.star-details { right: 11%; top: 12%; transform: rotate(8deg); }
+.star-dress { right: 11%; bottom: 13%; transform: rotate(-9deg); }
 .star-photo { left: 8%; bottom: 14%; transform: rotate(-8deg); }
+.rings-story { left: 8%; top: 13%; transform: rotate(-8deg); }
+.rings-details { left: 8%; bottom: 12%; transform: rotate(7deg); }
+.flower-rsvp { left: 9%; bottom: 12%; transform: rotate(-12deg); }
 
 .details .content { max-width: 770px; }
 
@@ -673,6 +699,66 @@ footer {
   .hero { min-height: 100svh; }
   .couple-hero { margin-top: 22px; }
   .details-card { margin-top: 28px; }
+
+  .slide > .doodle {
+    opacity: .58;
+  }
+
+  .slide > .heart {
+    font-size: 2.15rem;
+  }
+
+  .slide > .star {
+    font-size: 1.8rem;
+  }
+
+  .slide > .flower-mark,
+  .flower-doodle {
+    font-size: 2.4rem;
+  }
+
+  .slide > .rings {
+    width: 48px;
+    height: 30px;
+  }
+
+  .slide > .rings::before,
+  .slide > .rings::after {
+    border-width: 2px;
+  }
+
+  .heart-one { left: 16px; top: 18px; }
+  .heart-two { right: 12px; top: 72px; }
+  .heart-hero-three { left: 14px; bottom: 24px; }
+  .heart-hero-four { right: 42px; bottom: 24px; }
+  .heart-hero-five { left: 66px; top: 62px; }
+  .star-one { right: 22px; top: 18px; }
+
+  .heart-photo { right: 18px; top: 20px; }
+  .heart-story-two { left: 18px; bottom: 20px; }
+  .star-photo { right: 20px; left: auto; bottom: 22px; }
+  .rings-story { left: 18px; top: 22px; }
+
+  .heart-three { right: 18px; bottom: 20px; }
+  .heart-details-two { left: 18px; top: 20px; }
+  .star-details { right: 20px; top: 22px; }
+  .rings-details { left: 18px; bottom: 20px; }
+
+  .heart-four { right: 18px; top: 20px; }
+  .heart-dress-two { right: 18px; left: auto; bottom: 20px; top: auto; }
+  .star-dress { left: 20px; right: auto; top: 22px; bottom: auto; }
+  .flower-doodle { left: 18px; bottom: 18px; }
+
+  .heart-five { left: 18px; top: 20px; }
+  .heart-rsvp-two { right: 18px; top: 20px; }
+  .star-two { right: 20px; bottom: 20px; }
+  .flower-rsvp { left: 18px; bottom: 18px; }
+
+  .line-left {
+    top: auto;
+    bottom: 34px;
+    opacity: .24;
+  }
 
   .hero-names { font-size: clamp(3rem, 14vw, 4rem); }
   .hero-names span { display: block; }
